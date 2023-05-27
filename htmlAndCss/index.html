@@ -8,51 +8,64 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <main>
-        <h1>La Historia de mi vida</h1>
-        <p>@robertvdev</p>
+    <main class="principal">
+        <h1 class="titulo">La Historia de mi vida</h1>
+        <p class="nickname">@robertvdev</p>
         <h2>historia de sad</h2>
-        <p>
-            mi historia comienza... Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            Qui voluptas natus perferendis tempora debitis molestias exercitationem quam eveniet 
-            recusandae, ducimus fugiat, ab quibusdam molestiae necessitatibus unde consequatur. 
-            Aliquid, dolore illo! <span>Lorem</span> ipsum dolor sit amet consectetur, adipisicing elit. 
-            Minima quae assumenda, est repudiandae animi officia ipsum id, aut alias omnis mollitia 
-            totam adipisci eligendi eaque necessitatibus, nihil in modi quibusdam?
-        </p>
-        <img src="./img/bunny.jpg" alt="bunny">
+        <div class="contenedor">
+            <div class="contenido">
+                <img src="./img/bunny.jpg" alt="bunny">
+                <p>
+                    mi historia comienza... Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Qui voluptas natus perferendis tempora debitis molestias exercitationem quam eveniet
+                    recusandae, ducimus fugiat, ab quibusdam molestiae necessitatibus unde consequatur.
+                    Aliquid, dolore illo! <span>Lorem</span> ipsum dolor sit amet consectetur, adipisicing elit.
+                    Minima quae assumenda, est repudiandae animi officia ipsum id, aut alias omnis mollitia
+                    totam adipisci eligendi eaque necessitatibus, nihil in modi quibusdam?
+                </p>
+            </div>
+        </div>
         <h2>mis cosas favoritas</h2>
         <ul>
             <li>cosa 1</li>
             <li>cosa 2</li>
             <li>mi pc</li>
         </ul>
-        <p>Para ir a mis redes da click <a href="...">aquí</a></p>
+        <p class="social">Para ir a mis redes da click <a href="...">aquí</a></p>
     </main>
-    <h1>Me gustaría conocerte</h1>
-    <form method="post" action="myDB.com">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" placeholder="Nombre">
-        <label for="correo">Email:</label>
-        <input type="email" id="correo" placeholder="juan@hotmail.com">
-        <label for="contraseña">Contraseña:</label>
-        <input type="password" id="contraseña" placeholder="password">
-        <label for="si">Soltero? Si</label>
-        <input type="radio" id="si" name="estado civil">
-        <label for="no">No</label>
-        <input type="radio" id="no" name="estado civil">
-        <label for="check">acepta los términos?</label>
-        <input type="checkbox" id="check">
-        <label for="num">cual es tu edad:</label>
-        <input type="number" id="num">
-        <label for="color">cual es tu color favorito?</label>
-        <input type="color" id="color">
-        <label for="archivo">Sube un archivo</label>
-        <input type="file" id="archivo">
-        <div>
-            <button type="reset"><img src="./img/reset.png" alt="reset"></button>
-            <button type="submit">Enviar</button>
-        </div>
-    </form>
+    <div class="contenedorFormulario">
+        <h1>Me gustaría conocerte</h1>
+        <form class="formulario" method="post" action="myDB.com">
+            <div class="formularioCampos">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Nombre">
+                <label for="correo">Email:</label>
+                <input type="email" id="correo" placeholder="juan@hotmail.com">
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" placeholder="password">
+            </div>
+            <div class="formRadio">
+                <label id="radioPrimerLabel" for="si">Soltero?</label>
+                <label for="si">Si</label>
+                <input type="radio" id="si" name="estado civil">
+                <label for="no">No</label>
+                <input type="radio" id="no" name="estado civil">
+            </div>
+            <div class="formularioCampos">
+                <label for="check">acepta los términos?</label>
+                <input type="checkbox" id="check">
+                <label for="num">cual es tu edad:</label>
+                <input type="number" id="num">
+                <label for="color">cual es tu color favorito?</label>
+                <input type="color" id="color">
+                <label for="archivo">Sube un archivo</label>
+                <input type="file" id="archivo">
+            </div>
+            <div class="formularioButton">
+                <button class="reset" type="reset"><img src="./img/reset.png" alt="reset"></button>
+                <button class="enviar" type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
