@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(6, 187, 169), rgb(119, 97, 231));
+}
+.container {
+    text-align: center;
+    margin-top: 100px;
+}
+h1 {
+    font-size: 33px;
+    margin-bottom: 20px;
+}
+input {
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+select {
+    margin-right: 10px;
+}
+button {
+    padding: 5px 10px;
+}
+#greeting {
+    padding: 5px 0;
+    font-size: 28px;
+    margin-top: 20px;
+    font-weight: bold;
+}
